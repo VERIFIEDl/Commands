@@ -13,35 +13,31 @@ module.exports = class SocialCommand extends BaseCommand {
       .setColor('#00000')
       .addField('GO SUBSCRIBE TO MY YOUTUBE!!', 'Click link above to get to the youtube channel.')
       .setTimestamp()
-      .setFooter("VERIFIED", "https://lh3.googleusercontent.com/ogw/ADGmqu8eQSPmrsax-O_SEbQ2QsaQTFFT923OwP7PIO8=s83-c-mo");
 
-    const telegramEmbed = new Discord.MessageEmbed()
+      const instaEmbed = new Discord.MessageEmbed()
+      .setTitle('VERIFIED INSTAGRAM')
+      .setURL('https://t.me/jhttps://instagram.com/verifiedll?igshid=xn7puafi57nwoinchat/SW23tL0f05HlY1rS')
+      .setColor('#00000')
+      .addField('VERIFIED INSTAGRAM', 'Follow on instagram a different way to contact me.')
+      .setTimestamp()
+
+      const telegramEmbed = new Discord.MessageEmbed()
       .setTitle('VERIFIED TELEGRAM')
       .setURL('https://t.me/joinchat/SW23tL0f05HlY1rS')
       .setColor('#00000')
-      .addField('VERIFIED TELEGRAM', 'Join the telegram just incase the server gets banned click link.')
+      .addField('VERIFIED TELEGRAM', 'Join the telegram just incase the server gets banned click link above.')
       .setTimestamp()
-      .setFooter("VERIFIED", "https://lh3.googleusercontent.com/ogw/ADGmqu8eQSPmrsax-O_SEbQ2QsaQTFFT923OwP7PIO8=s83-c-mo");
 
-    const instagramEmbed = new Discord.MessageEmbed()
-      .setTitle('VERIFIED INSTAGRAM')
-      .setURL('https://instagram.com/verifiedll?igshid=xn7puafi57nw')
-      .setColor('#00000')
-      .addField('VERIFIED INSTAGRAM', "Follow the instagram this is a different way to contact me.")
-      .setTitlestamp()
-      .setFooter("VERIFIED", "https://lh3.googleusercontent.com/ogw/ADGmqu8eQSPmrsax-O_SEbQ2QsaQTFFT923OwP7PIO8=s83-c-mo");
-
-    const sellixEmbed = new Discord.MessageEmbed()
+      const sellixEmbed = new Discord.MessageEmbed()
       .setTitle('VERIFIED SELLIX')
       .setURL('https://sellix.io/lVERIFIEDll')
       .setColor('#00000')
-      .addField('VERIFIED SELLIX', "Come shop at my sellix cheap and realable products!")
-      .setTitlestamp()
-      .setFooter("VERIFIED", "https://lh3.googleusercontent.com/ogw/ADGmqu8eQSPmrsax-O_SEbQ2QsaQTFFT923OwP7PIO8=s83-c-mo");
+      .addField('VERIFIED SELLIX', 'Welcome to my sellix cheap prices and all types of products.')
+      .setTimestamp()
 
-    await message.channel.send(youtubeEmbed).catch(err => console.log(err));
-    await message.channel.send(telegramEmbed).catch(err => console.log(err));
-    await message.channel.send(instagramEmbed).catch(err => console.log(err));
-    await message.channel.send(sellixEmbed).catch(err => console.log(err));
+      await message.channel.send(youtubeEmbed).catch(err => console.log(err));
+      await message.channel.send(instaEmbed).catch(err => console.log(err));
+      await message.channel.send(telegramEmbed).catch(err => console.log(err));
+      await message.channel.send(sellixEmbed).catch(err => console.log(err));
   }
 }
